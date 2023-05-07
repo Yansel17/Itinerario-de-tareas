@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2? family=Lato:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" type="text/javascript" defer> </script>
+    
+</head>
+<body>
+    <div class="list roundBorder">
+        <div class="date">
+            <div class="dateLeft">
+                <div id="dateNumber" class="dateNumber"></div>
+                <div>
+                    <div id="dateMonth" class="dateMonth"></div>
+                    <div id="dateYear" class="dateYear"></div>
+                </div>
+            </div>
+            <div id="dateText" class="dateText"></div>
+            <div class="form">
+                <form onsubmit="addNewTask(event)">
+                    <input type="text" name="taskText" autocomplete="off" placeholder="Nueva tarea" class="roundBorder">
+                    <button type="submit" class="addTaskButton">+</button>
+                    <button type="button" class="ordderButton roundBorder" onclick="renderOrderedTasks()">Ordenar</button>
+                </form>
+                <div id="taskContainer"></div>
+            </div>
+
+        </div>
+        <p class="credits">By: Yansel Martinez</p>
+
+    </div>
+</body>
+<footer>
+</footer>
+</html>

@@ -1,0 +1,128 @@
+:root {
+    --primary: #a5c882;
+    --secundary: #d33f49;
+    --light: #fff;
+    --dark: #000;
+    --disabled: #7db6c7;
+    --add: rgb(141, 243, 235);
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    background-image: url(/img/feature-1024x708.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+::first-letter {
+    text-transform: capitalize;
+}
+
+.dateMonth {
+    text-transform: lowercase;
+}
+
+.roundBorder {
+    border-radius: 5px;
+}
+
+.list {
+    margin: 25px auto;
+    padding: 25px;
+    background-color: var(--light);
+    width: 100%;
+    max-width: 350px;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+.dateLeft {
+    display: flex;
+    align-items: center;
+}
+
+.dateNumber {
+    font-size: 50px;
+}
+
+.dateText {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.dateMonth,
+.dateNumber,
+.dateText {
+    font-weight: bold;
+}
+
+.dateMonth, 
+.dateYear {
+    margin: 0 0 0 7px;
+    font-size: 20px;
+}
+
+form {
+    margin: 20px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 35px auto;
+    grid-column-gap: 20px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.addTaskButton, 
+.ordderButton {
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.addTaskButton {
+    height: 35px;
+    border-radius: 50%;
+    font-size: 18px;
+    background-color: var(--disabled);
+}
+
+.ordderButton {
+    background-color: var(--secundary);
+    color: var(--light);
+    cursor: pointer;
+}
+
+.task {
+    background-color: var(--primary);
+    padding: 15px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.done {
+    background-color: var(--disabled);
+    text-decoration: line-through;
+    color: var(--dark);
+}
+
+.credits{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    align-items: center;
+    background-color: var(--light);
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    background-color: rgb(238, 235, 235);
+    border-radius: 5px;
+}
